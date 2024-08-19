@@ -2,7 +2,7 @@
 
 ## [1.0.0] - 2024-08-20
 
-Release of lab task notebook for tutors.
+Release of notebook for DIGI405 labs.
 
 ### Added:
 
