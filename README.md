@@ -2,35 +2,33 @@
 
 Geoff Ford  
 [https://geoffford.nz](https://geoffford.nz/)  
-Version 1.0.0
+Version 1.0.1
 
-The notebook in this repository is provided for students in DIGI405 at the University of Canterbury for a lab task that involves writing a query to use a Large Language Model (LLM) to extract named entities from arbitrary texts.   
+The notebook in this repository is provided for students in DIGI405 at the University of Canterbury for a lab task that involves writing a query to use a Large Language Model (LLM) to extract named entities from arbitrary texts. Students find this task interesting to understand system and user prompts, and zero-shot, one-shot, few-shot paradigms for prompting.
+
+A smaller model is used to make the task more challenging and demonstrate the sensitivity of LLM output to prompt wording. During our first run of this lab task, students found it interesting to see that even with identical prompting, settings and input text, LLMs often return different results. In addition, even the formatting of the JSON is a point of failure. 
 
 I appreciate this notebook may be relevant for others. If you use it please retain the authorship information and links.  
 
 Changes are documented in the [CHANGELOG](changelog.md).
 
-## Note on OpenRouter
+## Note on Cerebras 
 
-The notebook provides multiple examples that query [OpenRouter](https://openrouter.ai/)'s API. OpenRouter provides a single API endpoint that provides access to multiple LLMs via multiple LLM providers. OpenRouter provides [good documentation](https://openrouter.ai/docs) and access to several [free models](https://openrouter.ai/models?max_price=0). The free models are [rate limited](https://openrouter.ai/docs/limits) with the following limit at the time of writing this: "Free limit: If you are using a free model variant (with an ID ending in :free), then you will be limited to 20 requests per minute and 200 requests per day."  
+The notebook provides code to query [Cerebras](https://www.cerebras.ai/)'s API. Cerebras provides an API endpoint that provides access to multiple LLMs with generous rate limits for development and testing. Cerebras provides [good documentation](https://inference-docs.cerebras.ai/quickstart) and access to a range of well-regarded models. API calls are [rate limited](https://inference-docs.cerebras.ai/support/rate-limits).  
 
-If anyone from OpenRouter sees this - the free models and rate limits are very helpful for educators. Thank you!  
+If anyone from Cerebras sees this - free access to API calls and the provided rate limits are very helpful for educators. Thank you!  
 
-## Create an OpenRouter API key
+## Create a Cerebras API key
 
-Go to [OpenRouter](https://openrouter.ai/) and create an account. Once you are logged in, there will be a menu in the top right corner of your screen. Click on the and then click 'Keys'. Click the option to 'Create Key'. Give it a name (e.g. DIGI405 Lab) and click the 'Create' button. You will be shown an API key. Copy and paste the key into your password manager for future use. There is a field in the notebook where you need to paste in your key. You can delete the key at any time.   
+Go to [Cerebras](https://www.cerebras.ai/) and click the link to "Get an API key". For students in DIGI405, you can signup with your UC email address. You should indicate you are a student. You will be shown an API key (partially obscured) and sample code. Copy and paste the key into your password manager for future use. There is a field in the notebook where you need to paste in your key. Don't share your key with anyone else. 
 
-## Instructions for DIGI405 students
+## Instructions for DIGI405 students - warning about excessive, rapid or repeated requests during lab times
 
-Create a folder on our JupyterHub server for this notebook. Upload the files to the new folder and then open the Jupyter notebook.  
-
-### Warning about excessive, rapid or repeated requests during lab times
-
-This is the first semester we are using OpenRouter's service in DIGI405, please avoid making excessive, rapid or repeated requests during the lab times as there is the potential this could cause our network to be flagged as malicious and create problems for your classmates accessing the API.  
+This is the first semester we are using the Cerebras service in DIGI405, please avoid making excessive, rapid or repeated requests during the lab times as there is the potential this could cause our network to be flagged as malicious and create problems for your classmates accessing the API.  
 
 ## Installation  
 
-There is a requirements.txt file and a cell at the top of the notebook that can be run to install the required libraries OR just run:  
+If you are a DIGI405 student running this on our JupyterHub instance, all required libraries are pre-installed. If you want to install this on your own machine, there is a requirements.txt filewith required libraries. To install the required libraries run:  
 
 ```
     pip install -r requirements.txt
