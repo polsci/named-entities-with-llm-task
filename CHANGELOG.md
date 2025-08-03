@@ -1,5 +1,17 @@
 # Change log
 
+## [1.0.2] - 2025-08-03
+
+### Added:
+
+- release badge to README.md
+
+### Changed:
+
+- clarify install in README / notebook
+- clarify releases that support OpenRouter and Cerebras in README
+- simplify starting prompt
+
 ## [1.0.1] - 2025-07-25
 
 ### Added:
