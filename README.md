@@ -2,7 +2,7 @@
 
 Geoff Ford  
 [https://geoffford.nz](https://geoffford.nz/)  
-Version 1.0.1
+![GitHub Release](https://img.shields.io/github/v/release/polsci/named-entities-with-llm-task) 
 
 The notebook in this repository is provided for students in DIGI405 at the University of Canterbury for a lab task that involves writing a query to use a Large Language Model (LLM) to extract named entities from arbitrary texts. Students find this task interesting to understand system and user prompts, and zero-shot, one-shot, few-shot paradigms for prompting.
 
@@ -11,6 +11,10 @@ A smaller model is used to make the task more challenging and demonstrate the se
 I appreciate this notebook may be relevant for others. If you use it please retain the authorship information and links.  
 
 Changes are documented in the [CHANGELOG](changelog.md).
+
+## Note on OpenRouter support 
+
+Note: that version 1.0.0 of this repository used the OpenRouter API. From version 1.0.1 the notebook uses Cerebras. You can download the 1.0.0 release from the repository if you want to use OpenRouter. 
 
 ## Note on Cerebras 
 
@@ -28,7 +32,7 @@ This is the first semester we are using the Cerebras service in DIGI405, please 
 
 ## Installation  
 
-If you are a DIGI405 student running this on our JupyterHub instance, all required libraries are pre-installed. If you want to install this on your own machine, there is a requirements.txt filewith required libraries. To install the required libraries run:  
+If you are a DIGI405 student running this on our JupyterHub instance, all required libraries are pre-installed. If you want to install this on your own machine, there is a requirements.txt file with required libraries. To install the required libraries run:  
 
 ```
     pip install -r requirements.txt
