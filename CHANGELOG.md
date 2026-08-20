@@ -1,5 +1,20 @@
 # Change log
 
+## [1.0.3] - 2026-08-20
+
+### Added:
+
+- Mistral support
+- Notes in README and notebook on support for other free LLM providers and how to setup
+- added cell to install openai python package
+- added cell to preview available models from endpoint
+- added configuration of endpoint in notebook
+
+### Changed:
+
+- clarify Mistral setup in README/notebook
+- revise notebook cell order
+
 ## [1.0.2] - 2025-08-03
 
 ### Added:
