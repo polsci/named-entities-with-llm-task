@@ -1,6 +1,6 @@
 # Change log
 
-## [1.0.3] - 2026-08-20
+## [1.0.3] - 2026-08-20 - Updates for Free LLM Providers
 
 ### Added:
 
