@@ -12,27 +12,29 @@ I appreciate this notebook may be relevant for others. If you use it please reta
 
 Changes are documented in the [CHANGELOG](changelog.md).
 
-## Note on OpenRouter support 
+## Note on previous OpenRouter / Cerebras support 
 
-Note: that version 1.0.0 of this repository used the OpenRouter API. From version 1.0.1 the notebook uses Cerebras. You can download the 1.0.0 release from the repository if you want to use OpenRouter. 
+Note: that version 1.0.0 of this repository used the OpenRouter API. Up to version 1.0.2 the notebook uses Cerebras.  
 
-## Note on Cerebras 
+## Note on LLM Providers
 
-The notebook provides code to query [Cerebras](https://www.cerebras.ai/)'s API. Cerebras provides an API endpoint that provides access to multiple LLMs with generous rate limits for development and testing. Cerebras provides [good documentation](https://inference-docs.cerebras.ai/quickstart) and access to a range of well-regarded models. API calls are [rate limited](https://inference-docs.cerebras.ai/support/rate-limits).  
+Check [Free-LLM — Open Directory of Free AI & LLM APIs](https://github.com/nejib1/Free-LLM) for a repository of free LLM providers. Access to free LLM APIs is changeable. The requirement to run the notebook is an LLM API that is Open-AI compatible via the completions endpoint. The API endpoints for the free providers are listed in [the Free LLM repository](https://github.com/nejib1/Free-LLM). An endpoint base URL and api key can be configured in the notebook. 
 
-If anyone from Cerebras sees this - free access to API calls and the provided rate limits are very helpful for educators. Thank you!  
+API providers require completing a sign-up process. Look for a provider that does not require a credit card for sign-up. 
 
-## Create a Cerebras API key
+NOTE: If you are a DIGI405 student, in 2026 we are making use of Mistral AI. If you have problems getting this working, look for an provider that does not require credit card registration and the process should be similar. 
 
-Go to [Cerebras](https://www.cerebras.ai/) and click the link to "Get an API key". For students in DIGI405, you can signup with your UC email address. You should indicate you are a student. You will be shown an API key (partially obscured) and sample code. Copy and paste the key into your password manager for future use. There is a field in the notebook where you need to paste in your key. Don't share your key with anyone else. 
+## Create a Mistral API Key
+
+Go to [Mistral](https://console.mistral.ai/) and complete the sign-up process. For students in DIGI405, you can signup with your UC email address. Once sign-up is complete you may be prompted to create an API key. If you are not prompted for this, click the link to "Create an API key". Copy and paste the key into your password manager for future use. There is a field in the notebook where you need to paste in your key. Don't share your key with anyone else. 
 
 ## Instructions for DIGI405 students - warning about excessive, rapid or repeated requests during lab times
 
-This is the first semester we are using the Cerebras service in DIGI405, please avoid making excessive, rapid or repeated requests during the lab times as there is the potential this could cause our network to be flagged as malicious and create problems for your classmates accessing the API.  
+This is the first semester we are using the Mistral AI service in DIGI405. All LLM providers have rate limits. Avoid making excessive, rapid or repeated requests during the lab times as there is the potential this could cause our network to be flagged as malicious and create problems for your classmates accessing the API.  
 
 ## Installation  
 
-If you are a DIGI405 student running this on our JupyterHub instance, all required libraries are pre-installed. If you want to install this on your own machine, there is a requirements.txt file with required libraries. To install the required libraries run:  
+If you are a DIGI405 student running this on our JupyterHub instance, most required libraries are pre-installed. The notebook has a cell to run to install a new library for labs in 2026. If you want to install this on your own computer, there is a requirements.txt file with required libraries. To install the required libraries run:  
 
 ```
     pip install -r requirements.txt
